@@ -4,12 +4,16 @@
   <title>SepticureNew</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin'>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= render 'layouts/nav' %>
-<%= yield %>
+<div class="wrapper">
+	<%= render 'layouts/nav' %>
+	<%= yield %>
+	<%= render 'layouts/footer' %>
+</div>
 
 </body>
 </html>
