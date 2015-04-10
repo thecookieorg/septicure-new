@@ -5,9 +5,11 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
+                        <%= link_to root_path do %>
+                            <%= image_tag 'footer-logo.png', class: "footer-logo", id: "footer-logo" %>
+                        <% end %>
+                        
+                        <p>AFailed or failing drain fields can be effectively and inexpensively rejuvenated with liquid Septic-Cure. The natural bacteria in Septic-Cure will immediately begin breaking down and eliminating the grease and waste matter buildup (see buildup definition below) and allow water to flow properly through the septic tank system and drain field.</p>    
                     </div><!--/col-md-3-->
                     <!-- End About -->
 
@@ -37,24 +39,25 @@
                     <div class="col-md-3 md-margin-bottom-40">
                         <div class="headline"><h2>Useful Links</h2></div>
                         <ul class="list-unstyled link-list">
-                            <li><a href="index.html#">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="index.html#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="index.html#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="index.html#">Community</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="index.html#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                            <li><%= link_to 'Home', root_path %></li>
+                            <li><%= link_to 'Products', pages_products_path %></li>
+                            <li><%= link_to 'Guide', pages_guide_path %></li>
+                            <li><%= link_to 'About', pages_about_path %></li>
+                            <li><%= link_to 'Contact', pages_contact_path %></li>
                         </ul>
                     </div><!--/col-md-3-->
                     <!-- End Link List -->                    
+ 
 
                     <!-- Address -->
                     <div class="col-md-3 map-img md-margin-bottom-40">
                         <div class="headline"><h2>Contact Us</h2></div>                         
                         <address class="md-margin-bottom-40">
-                            25, Lorem Lis Street, Orange <br />
-                            California, US <br />
-                            Phone: 800 123 3456 <br />
-                            Fax: 800 123 3456 <br />
-                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                            Septic-Cure, Inc. <br />
+                            6278 N. Federal Hwy # 508 <br />
+                            Fort Lauderdale, FL 33308 <br />
+                            Phone: 800-280-5990 <br />
+                            Email: <a href="mailto:info@thesepticure.com" class="">info@thesepticure.com</a>
                         </address>
                     </div><!--/col-md-3-->
                     <!-- End Address -->
